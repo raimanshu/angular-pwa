@@ -1,0 +1,63 @@
+<router-outlet></router-outlet>
+
+Ref : https://www.coredna.com/blogs/progressive-web-app
+
+<h6>Functionalities need to implement</h6>
+Application Download, Installation, and Versioning,
+seo indexed,
+offline mode - DONE,
+push notification,
+gps enabled,
+App shell & Angular universal,
+Physical device interaction (Web Bluetooth),
+Register/Unregister service worker,
+Service Worker Communication,
+Service Worker Notifications,
+Service Worker in Production,
+Service Worker Configuration - DONE,
+life cycle of service workers, 
+
+
+
+<div class="container">
+  <h4 class="text-center"> <strong>{{title}}</strong> </h4>
+
+  <div>
+    <h5>Tasks to perform :</h5>
+    <p>- Service workers crud </p>
+    <p>- push notification </p>
+    <p>- downloading in backward </p>
+    <p>- communication of service workers and front view </p>
+    <p>- Checking for updates </p>
+  </div>
+
+  <div class="row">
+    <div class="col-5">
+      <div class="text-center img-responsive">
+        <img src="https://techcrunch.com/wp-content/uploads/2020/10/Google-Workspace-Icons-bad.png?w=730&crop=1"
+          alt="google_image" height="200" width="200">
+      </div>
+    </div>
+    <div class="col-7">
+      <small class="text-danger"> *Make sure to remove filters/All during browser network inspect. </small>
+      <p>This image is showed in every condition -</p>
+      <p>During ng serve - when network is ON or OFF</p>
+      <p>During running http-server - when network is ON or OFF</p>
+      <p>It is because this image is saved in memeory cacche despine of being an url. But, other stuff like fevicon,
+        polyfills etc cached in case of http-server running while in case of ng serve it is downloaded every time.</p>
+    </div>
+  </div>
+
+  <div>
+    <h5> <strong>Angular PWA topics</strong> </h5>
+
+    <button class="btn btn-primary" [routerLink]="['/views']"> Service worker example </button>
+
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-danger" [routerLink]="['/reference']">References</button>
+  </div>
+
+
+</div>
